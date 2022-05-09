@@ -1,14 +1,13 @@
 import "./App.css";
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Header from "./components/header/Header";
 
 function App() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                    dsf
-                </p>
-            </header>
+        <div>
+            <Header />
+            <Outlet />
         </div>
     );
 }
